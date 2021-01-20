@@ -1,6 +1,10 @@
 // GLOBAL VARIABLES
 
-$myHeight: 100vh;
+$vwHeight: 100vh;
+$fullWidth: 100%;
+$posAbsolute: absolute;
+$hiddenOverflow: hidden;
+$white: rgb(255, 255, 255);
 $myAnimTF: ease-out;
 
 
@@ -44,16 +48,16 @@ $myAnimTF: ease-out;
   h1 {
     font-size: 3.5vw;
     font-weight: 300;
-    color: white;
+    color: $white;
     font-family: "Lato";
   }
   
   // Strings settings
 
   .strips {
-    height: $myHeight;
+    height: $vwHeight;
     width: 100vw;
-    overflow: hidden;
+    overflow: $hiddenOverflow;
     text-align: center;
     display: flex;
     cursor: pointer;
@@ -63,14 +67,14 @@ $myAnimTF: ease-out;
       position: relative;
       width: 19.9vw;
       margin: 0.1vw;
-      height: $myHeight;
-      overflow: hidden;
+      height: $vhHeight;
+      overflow: $hiddenOverflow;
     
       .strip_content {
         @include d-flex-centered();
-        position: absolute;
-        height: $myHeight;
-        width: 100%;
+        position: $posAbsolute;
+        height: $vhHeight;
+        width: $fullWidth;
       }
     }
   }
@@ -84,16 +88,16 @@ $myAnimTF: ease-out;
       @include d-flex-centered();
       @include transform-origin(center center);
       @include transform(skew(30deg) scaleY(1) translate(0, 0));
-      position: absolute;
+      position: $posAbsolute;
       z-index: 1;
       top: 0;
       left: 0;
       width: 20vw;
-      height: $myHeight;
-      background: white;
+      height: $vhHeight;
+      background: $white;
       opacity: 0.05;
       transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-      overflow: hidden;
+      overflow: $hiddenOverflow;
     }
 
     :hover:before {
