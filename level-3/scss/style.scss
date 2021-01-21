@@ -20,7 +20,6 @@ $myAnimTF: ease-out;
 @mixin strip-animation ($name, $duration) {
     animation-name: $name;
     animation-duration: $duration;
-    animation-timing-function: $myAnimTF;
 }
 
 @mixin transform ($transform){
@@ -107,6 +106,13 @@ $myAnimTF: ease-out;
   }
   
   // Animation settings
+
+
+  @for $i from 1 through 5 {
+    .strip:nth-child(#{$i}) {
+      animation-timing-function: $myAnimTF;
+    }
+  }
 
   .strip:nth-child(1) {
 
