@@ -107,12 +107,12 @@ $myAnimTF: ease-out;
   
   // Animation settings
 
-
+  // (for loop)
   @for $i from 1 through 5 {
     .strip:nth-child(#{$i}) {
       animation-timing-function: $myAnimTF;
     }
-  }
+  } // (end of for loop)
 
   .strip:nth-child(1) {
 
