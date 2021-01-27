@@ -43,6 +43,7 @@ $myAnimTF: ease-out;
   
   body {
     margin: 10px 0 0 0;
+    overflow: hidden;
   }
   
   h1 {
@@ -67,13 +68,13 @@ $myAnimTF: ease-out;
       position: relative;
       width: 19.9vw;
       margin: 0.1vw;
-      height: $vhHeight;
+      height: $vwHeight;
       overflow: $hiddenOverflow;
     
       .strip_content {
         @include d-flex-centered();
         position: $posAbsolute;
-        height: $vhHeight;
+        height: $vwHeight;
         width: $fullWidth;
       }
     }
@@ -93,7 +94,7 @@ $myAnimTF: ease-out;
       top: 0;
       left: 0;
       width: 20vw;
-      height: $vhHeight;
+      height: $vwHeight;
       background: $white;
       opacity: 0.05;
       transition: all 0.6s cubic-bezier(0.23, 1, 0.32, 1);
