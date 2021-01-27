@@ -4,6 +4,7 @@
 
 body {
   margin: 10px 0 0 0;
+  overflow: hidden;
 }
 
 h1 {
@@ -69,10 +70,29 @@ h1 {
   opacity: 0.2;
 }
 
+.strip:nth-child(1) {
+  animation-timing-function: ease-out;
+}
+
+.strip:nth-child(2) {
+  animation-timing-function: ease-out;
+}
+
+.strip:nth-child(3) {
+  animation-timing-function: ease-out;
+}
+
+.strip:nth-child(4) {
+  animation-timing-function: ease-out;
+}
+
+.strip:nth-child(5) {
+  animation-timing-function: ease-out;
+}
+
 .strip:nth-child(1) .strip_content {
   animation-name: strip--u4rx9pe;
   animation-duration: 0.5s;
-  animation-timing-function: ease-out;
   background-color: #244F75;
 }
 @keyframes strip--u4rx9pe {
@@ -84,7 +104,6 @@ h1 {
 .strip:nth-child(2) .strip_content {
   animation-name: strip--u4rx9pg;
   animation-duration: 0.8s;
-  animation-timing-function: ease-out;
   background-color: #60BFBF;
 }
 @keyframes strip--u4rx9pg {
@@ -96,7 +115,6 @@ h1 {
 .strip:nth-child(3) .strip_content {
   animation-name: strip--u4rx9q8;
   animation-duration: 0.7s;
-  animation-timing-function: ease-out;
   background-color: #8C4B7E;
 }
 @keyframes strip--u4rx9q8 {
@@ -108,7 +126,6 @@ h1 {
 .strip:nth-child(4) .strip_content {
   animation-name: strip--u4rx9qn;
   animation-duration: 1s;
-  animation-timing-function: ease-out;
   background-color: #F8BB44;
 }
 @keyframes strip--u4rx9qn {
@@ -120,7 +137,6 @@ h1 {
 .strip:nth-child(5) .strip_content {
   animation-name: strip--u4rx9r0;
   animation-duration: 1.1s;
-  animation-timing-function: ease-out;
   background-color: #F24B4B;
 }
 @keyframes strip--u4rx9r0 {
